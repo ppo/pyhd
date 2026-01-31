@@ -1453,7 +1453,7 @@ class Orientations(SuperEnum):
 
     @classmethod
     def get(cls, value: int) -> "Orientations":
-        """Return the Orientation based on this (Color) number."""
+        """Return the Orientation based on the given number (Color or Tone)."""
         return (cls.LEFT if value < 4
                 else cls.RIGHT)
 
